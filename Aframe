@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kirby Floating in the Sky</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #87CEEB">
+      
+      <!-- Kirby Entity -->
+      <a-sphere color="#FFB6C1" radius="1.5" position="0 5 -5">
+        <!-- Kirby's eyes -->
+        <a-sphere color="#000000" radius="0.1" position="-0.4 0.3 1.45"></a-sphere>
+        <a-sphere color="#000000" radius="0.1" position="0.4 0.3 1.45"></a-sphere>
+        <!-- Kirby's mouth -->
+        <a-cylinder color="#000000" height="0.05" radius="0.2" position="0 -0.2 1.5"></a-cylinder>
+      </a-sphere>
+      
+      <!-- Clouds -->
+      <a-sphere color="#FFFFFF" radius="2" position="-3 7 -10" opacity="0.9"></a-sphere>
+      <a-sphere color="#FFFFFF" radius="1.5" position="4 6 -8" opacity="0.9"></a-sphere>
+      <a-sphere color="#FFFFFF" radius="1.8" position="0 8 -12" opacity="0.9"></a-sphere>
+      
+      <!-- Camera -->
+      <a-camera position="0 1.6 5"></a-camera>
+      
+    </a-scene>
+  </body>
+</html>
